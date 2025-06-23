@@ -63,12 +63,19 @@ header {
 
 .header-top {
   height: 10vh;
-  width: 100vw;
-  gap: 5px;
+  width: 80vw;
+  gap: 1vw;
   display: flex;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 10px;
   margin-left: 0;
+
+  button {
+    border: none;
+    background: none;
+    //position: absolute;
+    //left: 70vw;
+  }
 }
 
 div {
@@ -76,8 +83,9 @@ div {
 }
 
 .netmatters-logo {
-  width: 60vw;
-  padding-left: 10px;
+  width: 55vw;
+  max-width: 345px;
+  padding-left: 5px;
 
   img {
     margin-top: 5%;
@@ -90,15 +98,15 @@ button {
 }
 
 .menu-button {
-  height: 10vh;
-  margin-right: 20px;
+  height: 53px;
+  margin-left: 0;
 }
 
 .icon-menu::before {
   content: "\e9bd";
   color: white;
   text-align: center;
-  font-size: 40px;
+  font-size: 38px;
   background: #333645;
   border: none;
   border-radius: 8%;
@@ -123,7 +131,8 @@ button {
 
 .icon-phone::before {
   content: "\e942";
-  font-size: 50px;
+  font-size: 28px;
+  padding-left: 5px;
 }
 
 .support {
@@ -187,7 +196,7 @@ button {
 
 .search-bar {
   margin-left: 0;
-  width: 100vw;
+  width: 0;
 
   #search2 {
     display: none;
@@ -197,7 +206,7 @@ button {
     display: block;
     height: 7.5vh;
     width: 80vw;
-    margin: 0 5%;
+    margin: 0 5vw;
     margin-top: 0px;
     padding: 5px 15px;
     border: 2px #cecece solid;
@@ -220,6 +229,9 @@ h2 {
 }
 
 body {
+
+    width: 100vw;
+
   h2 {
     font-weight: 300;
     font-size: 36px;
@@ -278,11 +290,11 @@ body {
 .grid-container2 {
   display: grid;
   gap: 5px;
-  width: 90%;
+  width: 80vw;
   margin: 0 5%;
 
   h3 {
-    font-weight: 200;
+    font-weight: 300;
     font-size: 28px;
     margin: 15px auto;
   }
@@ -321,6 +333,7 @@ body {
 
 .item-1 {
   top: 0px;
+  width: 80vw;
 
   span {
     background-color: #68849c;
@@ -365,6 +378,8 @@ body {
 }
 
 .item-2 {
+
+    width: 80vw;
   span {
     background-color: $it-support-color;
     padding: 15px;
@@ -406,6 +421,9 @@ body {
 }
 
 .item-3 {
+
+width: 80vw;
+
   span {
     background-color: $digital-marketing-color;
     padding: 15px;
@@ -447,6 +465,9 @@ body {
 }
 
 .item-4 {
+
+    width: 80vw;
+
   span {
     background-color: #d64541;
     padding: 15px;
@@ -808,7 +829,7 @@ footer {
   font-weight: 600;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   * {
     margin: 0;
   }
@@ -1438,7 +1459,7 @@ footer {
     margin: 0 10% 50px 10%;
 
     div {
-      width: 75%;
+      width: 80%;
     }
   }
 
@@ -1537,39 +1558,7 @@ footer {
     width: 60px;
   }
 
-  .search-bar {
-    display: flex;
-    height: 60px;
-    width: 300px;
 
-    button {
-      background-color: #a09ca4;
-      border: none;
-      width: 60px;
-      height: 60px;
-
-      img {
-        filter: invert(1);
-      }
-    }
-
-    #search {
-      display: none;
-      margin: 0;
-    }
-
-    #search2 {
-      display: inline;
-      background-color: white;
-      width: 300px;
-      height: 60px;
-      border-radius: 0px;
-    }
-
-    button {
-      display: inline;
-    }
-  }
 
   .header-top {
     gap: 5px;
@@ -1797,6 +1786,49 @@ footer {
     }
 
 
+}
 
+@media (min-width: 768px) {
 
+header {
+    width: 100vw;
+}
+
+  .search-bar {
+    display: flex;
+    height: 60px;
+    width: 300px;
+
+    button {
+      background-color: #a09ca4;
+      border: none;
+      width: 60px;
+      height: 60px;
+
+      img {
+        filter: invert(1);
+      }
+    }
+
+    #search {
+      display: none;
+      margin: 0;
+    }
+
+    #search2 {
+      display: inline;
+      background-color: white;
+      width: 300px;
+      height: 60px;
+      border-radius: 0px;
+    }
+
+    button {
+      display: inline;
+    }
+  }
+
+  .icon-phone::before {
+  display: none;
+}
 }
