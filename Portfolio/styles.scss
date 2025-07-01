@@ -28,7 +28,7 @@ body {
 
 .csharp-image {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -90,6 +90,10 @@ nav {
   margin-left: 0;
   overflow: hidden;
 
+    a {
+    text-decoration: none;
+  }
+
   h1 {
     position: sticky;
     top: 0;
@@ -146,6 +150,7 @@ main {
   margin: 0 auto;
   flex-direction: column;
   height: 300px;
+  justify-content: space-around;
 
   .contact-text {
     text-align: center;
@@ -198,25 +203,60 @@ main {
 
 }
 
-.code-snippet-container {
+.project-container {
 
     display: flex;
     gap: 50px;
     margin-top: 40px;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 
         div {
-            width: 100vw;
+            width: 80%;
             border-radius: 10px;
-            padding: 10px;
-
             &:hover {
 
             }
     }
 
         img {
-            width: 100%;
+            width: 80vw;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: gray;
+        }
+
+        span {
+
+            &::before {
+                content: "\ea3c";
+            }
+    }
+}
+
+.code-container {
+
+    display: flex;
+    gap: 50px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
+        div {
+            width: 80%;
+            border-radius: 10px;
+            &:hover {
+
+            }
+    }
+
+        img {
+            width: 80vw;
             height: auto;
             border-radius: 10px;
         }
@@ -250,12 +290,19 @@ main {
     }
   }
 
-  .code-snippet-container {
+  .project-container {
 
         div {
-            width: 40vw;
+            width: 80%;
             border-radius: 10px;
-            padding: 10px;
+    }
+}
+
+  .code-container {
+
+        div {
+            width: 80%;
+            border-radius: 10px;
     }
 }
 
@@ -279,21 +326,52 @@ main {
       font-size: 32px;
     }
 
-
   }
 
-    .code-snippet-container {
+  main {
+    margin-left: 250px;
+  }
+
+    .project-container {
+
+      flex-direction: row;
 
         div {
-            width: 30%;
+            width: 25%;
             border-radius: 10px;
             padding: 10px;
+
+            img {
+              width: 100%;
+            }
     }
+}
+
+    .code-container {
+
+      flex-direction: row;
+      margin-left: 250px;
+
+        div {
+            width: 25%;
+            border-radius: 10px;
+            padding: 10px;
+
+            img {
+              width: 100%;
+            }
+    }
+}
+
+.contact-title {
+  font-size: 32px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .contact {
     flex-wrap: wrap;
-    height: 300px;
+    height: 350px;
 }
 
 .contact-button {
