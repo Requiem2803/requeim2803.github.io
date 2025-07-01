@@ -100,6 +100,7 @@ nav h1 {
   color: steelblue;
   border: 4px solid steelblue;
   border-right: none;
+  text-decoration: none;
 }
 nav ul {
   flex-grow: 1;
