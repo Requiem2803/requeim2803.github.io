@@ -21,6 +21,10 @@
   font-family: "Roboto Condensed", sans-serif;
 }
 
+.rc-logo {
+  text-decoration: none;
+}
+
 body {
   margin: 0;
 }
