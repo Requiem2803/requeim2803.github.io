@@ -24,6 +24,10 @@
 
 .rc-logo {
   text-decoration: none;
+
+  &:visited {
+    text-decoration: none;
+  }
 }
 
 body {

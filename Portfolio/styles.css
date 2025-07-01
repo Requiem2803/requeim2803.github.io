@@ -24,6 +24,9 @@
 .rc-logo {
   text-decoration: none;
 }
+.rc-logo:visited {
+  text-decoration: none;
+}
 
 body {
   margin: 0;
