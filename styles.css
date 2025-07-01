@@ -1,37 +1,280 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon.woff?ui795y") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-],
+[class*=" icon-"] {
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 * {
-  background-color: black;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
-h1 {
+body {
+  margin: 0;
+}
+
+.csharp-image {
+  height: 100vh;
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header {
+  position: relative;
+  text-align: center;
+}
+header h1 {
+  color: white;
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  margin: 0;
+  width: 60vw;
+  font-weight: 500;
+}
+header h2 {
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  margin: 100px auto;
+  width: 60vw;
+  font-weight: 300;
+}
+header p {
+  color: white;
+  position: absolute;
+  top: 88%;
+  left: 40%;
+  margin: 0;
+  width: 20vw;
+}
+header span::after {
+  content: "\ea44";
+  color: white;
+  position: absolute;
+  top: 94%;
+  left: 40%;
+  margin: 0;
+  width: 20vw;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  max-width: 200px;
+  background-color: white;
+  border-right: 4px solid steelblue;
+  height: 100vh;
+  margin-left: 0;
+  overflow: hidden;
+}
+nav h1 {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
   font-size: 64px;
-  color: red;
+  margin: 0 auto 20px;
+  padding: 50px 1em;
+  color: steelblue;
+  border: 4px solid steelblue;
+  border-right: none;
+}
+nav ul {
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 40px;
   text-align: center;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
-
-li {
-  color: red;
-  font-size: 32px;
-  text-align: center;
-  list-style-type: none;
+nav ul li {
+  padding: 1px 0;
+  width: 55%;
+  margin: 0 auto;
+  white-space: nowrap;
 }
-
-a {
-  color: red;
-}
-a:hover {
-  text-shadow: 0 0 25px red;
-  font-size: 40px;
+nav ul li:hover {
+  border-bottom: 4px solid steelblue;
   transition: 0.3s;
 }
-
-.newest::before {
-  content: "NEW! - ";
-  color: yellow;
-  text-shadow: 0 0 25px lightyellow;
+nav ul li a {
+  text-decoration: none;
+  color: black;
 }
 
-.unavailable::before {
-  content: "UNAVAILABLE - ";
-  color: red;
-  text-shadow: 0 0 25px red;
+main {
+  margin-left: 220px;
+}
+main p {
+  font-size: 22px;
+}
+
+.contact {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  height: 300px;
+}
+.contact .contact-text {
+  text-align: center;
+  margin: 0 auto;
+}
+.contact h3 {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.contact h4 {
+  font-size: 26px;
+  margin: 0 auto;
+}
+.contact h5 {
+  font-size: 22px;
+  margin: 0 auto;
+}
+.contact p {
+  margin: 10px auto;
+  text-align: center;
+}
+.contact .contact-inputs-name input {
+  background-color: lightgrey;
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+  height: 50px;
+  display: block;
+  margin: 10px auto;
+}
+.contact .contact-inputs-message input {
+  background-color: lightgrey;
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+  height: 50px;
+  display: block;
+  margin: 10px auto;
+}
+
+.code-snippet-container {
+  display: flex;
+  gap: 50px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+.code-snippet-container div {
+  width: 100vw;
+  border-radius: 10px;
+  padding: 10px;
+}
+.code-snippet-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.code-snippet-container a {
+  text-decoration: none;
+  color: gray;
+}
+.code-snippet-container span::before {
+  content: "\ea3c";
+}
+
+@media screen and (min-width: 407px) {
+  header p {
+    top: 90%;
+  }
+}
+@media screen and (min-width: 610px) {
+  header h2 {
+    top: 20%;
+  }
+  .code-snippet-container div {
+    width: 40vw;
+    border-radius: 10px;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 1020px) {
+  header h1 {
+    font-size: 50px;
+  }
+  header h2 {
+    font-size: 38px;
+  }
+  header p {
+    font-size: 32px;
+  }
+  header span {
+    font-size: 32px;
+  }
+  .code-snippet-container div {
+    width: 30%;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .contact {
+    flex-wrap: wrap;
+    height: 300px;
+  }
+  .contact-button {
+    border-top: steelblue 4px solid;
+    border-bottom: steelblue 4px solid;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .contact-inputs-name {
+    display: flex;
+    width: 53%;
+    gap: 10px;
+    margin: 0 auto;
+  }
+  .contact-inputs-name input {
+    width: 400px;
+  }
+  .contact-inputs-message {
+    width: 66%;
+    align-self: center;
+  }
+  #message {
+    height: 75px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header h1 {
+    font-size: 64px;
+  }
+  header h2 {
+    font-size: 58px;
+    top: 25%;
+  }
+}
+@media screen and (max-width: 1020px) {
+  nav {
+    display: none !important;
+  }
+  main {
+    margin-left: 0;
+  }
 }/*# sourceMappingURL=styles.css.map */
