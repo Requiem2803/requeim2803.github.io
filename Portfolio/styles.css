@@ -124,10 +124,11 @@ nav ul li {
   width: 55%;
   margin: 0 auto;
   white-space: nowrap;
+  transition: 0.3s;
+  border-bottom: 0px solid steelblue;
 }
 nav ul li:hover {
   border-bottom: 4px solid steelblue;
-  transition: 0.3s;
 }
 nav ul li a {
   text-decoration: none;

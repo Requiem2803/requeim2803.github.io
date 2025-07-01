@@ -131,10 +131,11 @@ nav {
       width: 55%;
       margin: 0 auto;
       white-space: nowrap;
+      transition: 0.3s;
+      border-bottom: 0px solid steelblue;
 
       &:hover {
         border-bottom: 4px solid steelblue;
-        transition: 0.3s;
       }
 
       a {
