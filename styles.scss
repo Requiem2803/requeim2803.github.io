@@ -17,11 +17,13 @@ li {
 
 a {
     color: red;
+    transition: .3s;
+    text-shadow: 0 0 0 red;
 
     &:hover {
         text-shadow: 0 0 25px red;
         font-size: 40px;
-        transition: .3s;
+        
     }
 }
 

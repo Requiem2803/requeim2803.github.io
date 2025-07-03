@@ -17,11 +17,12 @@ li {
 
 a {
   color: red;
+  transition: 0.3s;
+  text-shadow: 0 0 0 red;
 }
 a:hover {
   text-shadow: 0 0 25px red;
   font-size: 40px;
-  transition: 0.3s;
 }
 
 .newest::before {
