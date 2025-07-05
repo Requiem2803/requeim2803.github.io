@@ -1,4 +1,4 @@
-* {
+body {
   background-color: black;
 }
 
@@ -8,27 +8,55 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-size: 40px;
+  color: red;
+  text-align: center;
+}
+
 li {
   color: red;
   font-size: 32px;
   text-align: center;
   list-style-type: none;
+  margin: 0 auto;
+  text-wrap: nowrap;
+}
+
+p {
+  font-size: 30px;
+}
+
+button {
+  border: none;
+  border-bottom: 5px solid darkred;
+  transition: 0.3s;
+  border-radius: 5px;
+  background-color: red;
+  font-size: 30px;
+  display: inline-block;
+  padding-bottom: 0px;
+}
+button:hover {
+  box-shadow: 0 0 25px red;
+  font-size: 40px;
+  border-bottom: 0px solid darkred;
+  padding-bottom: 5px;
 }
 
 a {
-  color: red;
-  transition: 0.3s;
+  color: black;
   text-shadow: 0 0 0 red;
-}
-a:hover {
-  text-shadow: 0 0 25px red;
-  font-size: 40px;
+  text-decoration: none;
 }
 
 .newest::before {
   content: "NEW! - ";
   color: yellow;
   text-shadow: 0 0 25px lightyellow;
+  border: none;
+  font-size: 30px;
+  transition: 0.3s;
 }
 
 .unavailable::before {
