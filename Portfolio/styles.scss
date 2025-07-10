@@ -30,12 +30,52 @@
   }
 }
 
-body {
-  margin: 0;
+.icon-menu {
+  border-radius: 100%;
+  padding: 5px;
+  border: steelblue solid 1px;
+  background-color: steelblue;
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  z-index: 1000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+
+  &::before {
+    content: "\e9bd";
+    color: white;
+    font-size: 32px;
+  }
 }
 
-#about-me-page {
-  margin-left: 250px;
+.icon-menu-open {
+  border-radius: 100%;
+  padding: 5px;
+  border: steelblue solid 1px;
+  background-color: steelblue;
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  z-index: 1000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+
+  &::before {
+    content: "\ea10";
+    color: white;
+    font-size: 32px;
+  }
+}
+
+body {
+  margin: 0;
 }
 
 #scs-page {
@@ -81,7 +121,7 @@ header {
     width: 20vw;
   }
 
-  span::after {
+  .icon-down-arrow::after {
     content: "\ea44";
     color: white;
     position: absolute;
@@ -156,7 +196,7 @@ nav {
 
 
 main {
-  margin-left: 220px;
+  
 
   p {
     font-size: 22px;
@@ -219,6 +259,14 @@ main {
 
 
 
+}
+
+#about-me-page {
+  margin: 100px 20px;
+}
+
+#scs-page {
+  margin: 100px 20px;
 }
 
 .project-container {
@@ -309,7 +357,8 @@ main {
     }
 
     .btt {
-      margin: 50px auto;
+      margin: 0 auto;
+      margin-top: 350px;
       display: block;
       text-align: center;
       line-height: 10px;
@@ -320,6 +369,8 @@ main {
         font-size: 32px;
       }
     }
+
+
 
 @media screen and (min-width: 407px) {
   header {
@@ -355,6 +406,19 @@ main {
 }
 
 @media screen and (min-width: 1020px) {
+
+  main{
+    margin-left: 220px;
+  }
+
+  .icon-menu {
+    display: none;
+  }
+
+    .icon-menu-open {
+    display: none;
+  }
+  
   header {
     h1 {
       font-size: 50px;
@@ -374,8 +438,8 @@ main {
 
   }
 
-  main {
-    margin-left: 200px;
+  .btt {
+    margin-top: 50px;
   }
 
     .project-container {
@@ -447,7 +511,17 @@ main {
     #message {
         height: 75px;
     }
+
+    #about-me-page {
+  margin: 100px 250px;
 }
+
+    #scs-page {
+  margin: 100px 250px;
+}
+}
+
+
 
 @media screen and (min-width: 1200px) {
   header {
@@ -464,10 +538,6 @@ main {
 
 @media screen and (max-width: 1020px) {
   nav {
-    display: none !important;
-  }
-
-  main {
-    margin-left: 0;
+    //display: none !important;
   }
 }

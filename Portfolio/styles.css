@@ -28,12 +28,50 @@
   text-decoration: none;
 }
 
-body {
-  margin: 0;
+.icon-menu {
+  border-radius: 100%;
+  padding: 5px;
+  border: steelblue solid 1px;
+  background-color: steelblue;
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  z-index: 1000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+.icon-menu::before {
+  content: "\e9bd";
+  color: white;
+  font-size: 32px;
 }
 
-#about-me-page {
-  margin-left: 250px;
+.icon-menu-open {
+  border-radius: 100%;
+  padding: 5px;
+  border: steelblue solid 1px;
+  background-color: steelblue;
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  z-index: 1000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+.icon-menu-open::before {
+  content: "\ea10";
+  color: white;
+  font-size: 32px;
+}
+
+body {
+  margin: 0;
 }
 
 #scs-page {
@@ -77,7 +115,7 @@ header p {
   margin: 0;
   width: 20vw;
 }
-header span::after {
+header .icon-down-arrow::after {
   content: "\ea44";
   color: white;
   position: absolute;
@@ -143,9 +181,6 @@ nav ul li a {
   color: black;
 }
 
-main {
-  margin-left: 220px;
-}
 main p {
   font-size: 22px;
 }
@@ -196,6 +231,14 @@ main p {
   height: 50px;
   display: block;
   margin: 10px auto;
+}
+
+#about-me-page {
+  margin: 100px 20px;
+}
+
+#scs-page {
+  margin: 100px 20px;
 }
 
 .project-container {
@@ -262,7 +305,8 @@ main p {
 }
 
 .btt {
-  margin: 50px auto;
+  margin: 0 auto;
+  margin-top: 350px;
   display: block;
   text-align: center;
   line-height: 10px;
@@ -292,6 +336,15 @@ main p {
   }
 }
 @media screen and (min-width: 1020px) {
+  main {
+    margin-left: 220px;
+  }
+  .icon-menu {
+    display: none;
+  }
+  .icon-menu-open {
+    display: none;
+  }
   header h1 {
     font-size: 50px;
   }
@@ -304,8 +357,8 @@ main p {
   header span {
     font-size: 32px;
   }
-  main {
-    margin-left: 200px;
+  .btt {
+    margin-top: 50px;
   }
   .project-container {
     flex-direction: row;
@@ -361,6 +414,12 @@ main p {
   #message {
     height: 75px;
   }
+  #about-me-page {
+    margin: 100px 250px;
+  }
+  #scs-page {
+    margin: 100px 250px;
+  }
 }
 @media screen and (min-width: 1200px) {
   header h1 {
@@ -369,13 +428,5 @@ main p {
   header h2 {
     font-size: 58px;
     top: 25%;
-  }
-}
-@media screen and (max-width: 1020px) {
-  nav {
-    display: none !important;
-  }
-  main {
-    margin-left: 0;
   }
 }/*# sourceMappingURL=styles.css.map */
