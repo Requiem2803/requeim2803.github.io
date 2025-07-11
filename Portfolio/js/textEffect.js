@@ -34,22 +34,3 @@ $(function() {
 
 setTimeout(typeWriter, 2200);
 });
-
-
-//typewriter effect for code project pages
-$(function() {
-    const myCode = $(".language-javascript");
-    const text = myCode.text();
-    myCode.text(""); 
-
-    let i = 0;
-    function typeWriter() {
-    if (i < text.length) {
-        myCode.append(text.charAt(i));
-        i++;
-        setTimeout(typeWriter, 5);
-    }
-}
-
-typeWriter();
-});
