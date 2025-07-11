@@ -120,8 +120,9 @@ header {
     margin: 0;
     width: 20vw;
   }
+}
 
-  .icon-down-arrow::after {
+.icon-down-arrow::after {
     content: "\ea44";
     color: white;
     position: absolute;
@@ -130,7 +131,6 @@ header {
     margin: 0;
     width: 20vw;
   }
-}
 
 nav {
   display: flex;
@@ -312,6 +312,19 @@ main {
     flex-wrap: wrap;
     justify-content: space-evenly;
 
+    button {
+      background-color: white;
+      color: black;
+      font-size: 20px;
+      border-radius: 10px;
+      border: 2px black solid;
+      transition: .2s;
+
+      &:hover {
+        background-color: black;
+        color: white;
+      }
+    }
 
         div {
             width: 80%;
@@ -323,8 +336,8 @@ main {
 
         img {
             width: 80vw;
-            height: auto;
             border-radius: 10px;
+            height: 150px;
         }
 
         a {

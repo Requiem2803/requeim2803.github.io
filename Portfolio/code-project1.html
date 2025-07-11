@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html style="background-color: #222222;" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - About Me</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/vs2015.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Transition Code</title>
+</head>
+<body>
+    <a href="coding-examples.html"><button style="margin: 25px 0 0 100px; background-color: white; color: black; font-size: 20px; border-radius: 10px; border: 2px black solid;" class="back-button">Back</button></a>
+    <h1 style="margin-left: 5vw; color: white;">Code Project - Page Transition</h1>
+    <pre style="margin-left: 5vw;"><code style="text-wrap: auto; width: 80vw;" class="language-javascript">
+        // hides the main display whilst ensuring the page is still useable without javascript.
+        $("main, header").css("display","none");
+
+        // reveals the content as soon as the page is done loading.
+        $(function() {
+            $("main, header").fadeIn(1000);
+        });
+
+        // once a link with the class "change page" is clicked, it fades out the main and header before changing the page.
+        $(".change-page").on("click", function(e) {
+            e.preventDefault();
+            const linkLocation = this.href;
+            $("main, header").fadeOut(1000, function() {
+                window.location = linkLocation;
+            });
+        });
+</code></pre>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/textEffect.js"></script>
+<script>hljs.highlightAll();</script>
+
+</body>
+</html>

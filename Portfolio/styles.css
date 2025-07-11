@@ -115,7 +115,8 @@ header p {
   margin: 0;
   width: 20vw;
 }
-header .icon-down-arrow::after {
+
+.icon-down-arrow::after {
   content: "\ea44";
   color: white;
   position: absolute;
@@ -272,14 +273,26 @@ main p {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+.code-container button {
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 2px black solid;
+  transition: 0.2s;
+}
+.code-container button:hover {
+  background-color: black;
+  color: white;
+}
 .code-container div {
   width: 80%;
   border-radius: 10px;
 }
 .code-container img {
   width: 80vw;
-  height: auto;
   border-radius: 10px;
+  height: 150px;
 }
 .code-container a {
   text-decoration: none;
