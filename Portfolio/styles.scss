@@ -22,6 +22,10 @@
   font-family: "Roboto Condensed", sans-serif;
 }
 
+      a {
+        text-decoration: none;
+      }
+
 .rc-logo {
   text-decoration: none;
 
@@ -379,7 +383,10 @@ main {
       display: block;
       text-align: center;
       line-height: 10px;
-      text-decoration: none;
+      color: black;
+
+
+      
 
       span::before {
         content: "\ea42";

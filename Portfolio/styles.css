@@ -21,6 +21,10 @@
   font-family: "Roboto Condensed", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .rc-logo {
   text-decoration: none;
 }
@@ -326,7 +330,7 @@ main p {
   display: block;
   text-align: center;
   line-height: 10px;
-  text-decoration: none;
+  color: black;
 }
 .btt span::before {
   content: "\ea42";
