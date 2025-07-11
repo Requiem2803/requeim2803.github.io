@@ -273,7 +273,7 @@ main p {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.code-container button {
+.code-container a button {
   background-color: white;
   color: black;
   font-size: 20px;
@@ -281,7 +281,7 @@ main p {
   border: 2px black solid;
   transition: 0.2s;
 }
-.code-container button:hover {
+.code-container a button:hover {
   background-color: black;
   color: white;
 }
