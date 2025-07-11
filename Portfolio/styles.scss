@@ -182,6 +182,10 @@ nav {
       transition: 0.3s;
       border-bottom: 0px solid steelblue;
 
+      .current-page {
+  font-weight: 600;
+}
+
       &:hover {
         border-bottom: 4px solid steelblue;
       }
