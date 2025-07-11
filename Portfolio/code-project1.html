@@ -13,8 +13,13 @@
     <title>Transition Code</title>
 </head>
 <body>
-    <a href="coding-examples.html"><button style="margin: 25px 0 0 100px; background-color: white; color: black; font-size: 20px; border-radius: 10px; border: 2px black solid;" class="back-button">Back</button></a>
+    <a href="coding-examples.html"><button class="" style="margin: 25px 0 0 100px; background-color: white; color: black; font-size: 20px; border-radius: 10px; border: 2px black solid;" class="back-button">Back</button></a>
     <h1 style="margin-left: 5vw; color: white;">Code Project - Page Transition</h1>
+    <p style="color: white; margin-left: 100px;">The following is a segment of code from my portfolio website. It is one of my first JavaScript scripts.<br>
+        Initally it fades in a page from blank however this script truly shines when used on a link. It uses "preventDefault" to stop the link from working, stores the location of that link as a variable,<br>
+        fades out the screen and then calls the link variable to transfer pages after the fadeout is completed.<br>
+        By storing the link as a variable it allows the script to run regardless of the link being used, as long as it is assinged the correct class in HTML.<br>
+        Finally, by hiding the original content and stopping the link using JavaScript instead of generating it within JavaScript it ensures the website still functions even in browsers where JavaScript is not available.</p>
     <pre style="margin-left: 5vw;"><code style="text-wrap: auto; width: 80vw;" class="language-javascript">
         // hides the main display whilst ensuring the page is still useable without javascript.
         $("main, header").css("display","none");
