@@ -22,6 +22,49 @@ $text-color: #333645;
   margin: 0 auto;
 }
 
+.sticky-container {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+#sidebar {
+  background-color: #333645;
+  margin-left: 50px;
+  width: 200px;
+  z-index: 1000000000;
+  
+  h3 {
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+
+  p {
+    color: white;
+    border: 1px gray solid;
+    padding: 10px 0;
+    padding-left: 20px;
+  }
+
+  .icon-double-right-arrow {
+  content: "\ea21";
+}
+
+}
+
 .hover-menus {
     margin: 200px;
     display: none;
@@ -55,6 +98,7 @@ $text-color: #333645;
 header {
   height: 150px;
   margin-bottom: 0px;
+  z-index: 100000;
 
   nav {
     display: none;
@@ -96,6 +140,18 @@ button {
 
 .icon-menu::before {
   content: "\e9bd";
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  background: #333645;
+  border: none;
+  border-radius: 8%;
+  padding: 20%;
+  justify-self: center;
+}
+
+.icon-x::before {
+  content: "\ea10";
   color: white;
   text-align: center;
   font-size: 40px;
@@ -176,13 +232,15 @@ button {
   left: 16px;
   margin: 40px 25px;
 }
+.home-carousel {
+  height: 600px;
 
-#home-image {
+  .home-image {
   height: 600px;
   width: 100%;
   overflow: hidden;
-  margin-top: 25px;
   object-fit: cover;
+}
 }
 
 .search-bar {
@@ -484,6 +542,19 @@ body {
       background-color: white;
       color: #d64541;
     }
+  }
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  transition: transform 0.3s ease;
+  background-color: #fff;
+
+  &.header-hidden {
+    transform: translateY(-150%);
+    background-color: rgba(0, 0, 0, 0);
   }
 }
 
@@ -816,7 +887,11 @@ footer {
   #header-nav {
     display: block;
     background-color: #272936;
-    height: 200px;
+    height: 120px;
+
+    h2 {
+      display: none;
+    }
 
     .nav-dropdown-selector {
       display: flex;
@@ -825,7 +900,7 @@ footer {
 
       li {
         display: block;
-        height: 200px;
+        height: 120px;
         width: 150px;
         color: white;
         text-align: center;
@@ -910,6 +985,10 @@ footer {
         background-color:darken($color: $c-and-d-color, $amount: 15);
         margin-top: 0;
 
+                .nav-dropdown {
+          display: flex;
+        }
+
         ul {           
             width: 100vw;
             height: 300px;
@@ -920,6 +999,7 @@ footer {
             text-align: left;
             color: white;
             margin-left: 16vw;
+            display: block;
         }
 
         span {
@@ -973,16 +1053,22 @@ footer {
         background-color:darken($color: $it-support-color, $amount: 15);
         margin-top: 0;
 
+        .nav-dropdown {
+          display: flex;
+        }
+
         ul {
             width: 100vw;
             height: 150px;
         }
 
         h2 {
+            display: block;
             margin-top: 30px;
             text-align: left;
             color: white;
             margin-left: 16vw;
+            display: block;
         }
 
         span {
@@ -1034,6 +1120,10 @@ footer {
         background-color:darken($color: $digital-marketing-color, $amount: 15);
         margin-top: 0;
 
+                .nav-dropdown {
+          display: flex;
+        }
+
         ul {
             width: 100vw;
             height: 150px;
@@ -1044,6 +1134,7 @@ footer {
             text-align: left;
             color: white;
             margin-left: 16vw;
+            display: block;
         }
 
         span {
@@ -1095,6 +1186,10 @@ footer {
         background-color:darken($color: $telecoms-services-color, $amount: 15);
         margin-top: 0;
 
+                .nav-dropdown {
+          display: flex;
+        }
+
         ul {
             width: 100vw;
             height: 150px;
@@ -1105,6 +1200,7 @@ footer {
             text-align: left;
             color: white;
             margin-left: 16vw;
+            display: block;
         }
 
         span {
@@ -1156,6 +1252,10 @@ footer {
         background-color:darken($color: $web-design-color, $amount: 15);
         margin-top: 0;
 
+                .nav-dropdown {
+          display: flex;
+        }
+
         ul {
             width: 100vw;
             height: 150px;
@@ -1166,6 +1266,7 @@ footer {
             text-align: left;
             color: white;
             margin-left: 16vw;
+            display: block;
         }
 
         span {
@@ -1217,6 +1318,10 @@ footer {
         background-color:darken($color: $cyber-security-color, $amount: 15);
         margin-top: 0;
 
+                .nav-dropdown {
+          display: flex;
+        }
+        
         ul {
             width: 100vw;
             height: 150px;
@@ -1227,6 +1332,7 @@ footer {
             text-align: left;
             color: white;
             margin-left: 16vw;
+            display: block;
         }
 
         span {
@@ -1278,6 +1384,10 @@ footer {
         background-color:darken($color: $developer-course-color, $amount: 15);
         margin-top: 0;
 
+                .nav-dropdown {
+          display: flex;
+        }
+
         ul {
             width: 100vw;
             height: 150px;
@@ -1289,6 +1399,7 @@ footer {
             text-align: left;
             color: white;
             margin-left: 16vw;
+            display: block;
         }
 
         span {
@@ -1592,7 +1703,7 @@ footer {
   }
 
 .nav-dropdown {
-    display: flex;
+    display: none;
     flex-wrap: wrap; 
     justify-content: normal;
     align-content: space-between;
@@ -1795,7 +1906,6 @@ footer {
         .icon-dc-4::before {
             content: "\e973 ";
     }
-
 
 
 

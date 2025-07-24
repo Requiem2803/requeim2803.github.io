@@ -12,6 +12,44 @@
   margin: 0 auto;
 }
 
+.sticky-container {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
+
+#sidebar {
+  background-color: #333645;
+  margin-left: 50px;
+  width: 200px;
+  z-index: 1000000000;
+}
+#sidebar h3 {
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+#sidebar p {
+  color: white;
+  border: 1px gray solid;
+  padding: 10px 0;
+  padding-left: 20px;
+}
+#sidebar .icon-double-right-arrow {
+  content: "\ea21";
+}
+
 .hover-menus {
   margin: 200px;
   display: none;
@@ -45,6 +83,7 @@
 header {
   height: 150px;
   margin-bottom: 0px;
+  z-index: 100000;
 }
 header nav {
   display: none;
@@ -84,6 +123,18 @@ button {
 
 .icon-menu::before {
   content: "\e9bd";
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  background: #333645;
+  border: none;
+  border-radius: 8%;
+  padding: 20%;
+  justify-self: center;
+}
+
+.icon-x::before {
+  content: "\ea10";
   color: white;
   text-align: center;
   font-size: 40px;
@@ -161,11 +212,13 @@ button {
   margin: 40px 25px;
 }
 
-#home-image {
+.home-carousel {
+  height: 600px;
+}
+.home-carousel .home-image {
   height: 600px;
   width: 100%;
   overflow: hidden;
-  margin-top: 25px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -419,6 +472,18 @@ body a {
 .item-4:hover span {
   background-color: white;
   color: #d64541;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  transition: transform 0.3s ease;
+  background-color: #fff;
+}
+header.header-hidden {
+  transform: translateY(-150%);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .item-5 span {
@@ -692,7 +757,10 @@ footer .footer-logo {
   #header-nav {
     display: block;
     background-color: #272936;
-    height: 200px;
+    height: 120px;
+  }
+  #header-nav h2 {
+    display: none;
   }
   #header-nav .nav-dropdown-selector {
     display: flex;
@@ -701,7 +769,7 @@ footer .footer-logo {
   }
   #header-nav .nav-dropdown-selector li {
     display: block;
-    height: 200px;
+    height: 120px;
     width: 150px;
     color: white;
     text-align: center;
@@ -771,6 +839,9 @@ footer .footer-logo {
     background-color: #435466;
     margin-top: 0;
   }
+  #header-nav .CnD:hover .cd-hover .nav-dropdown {
+    display: flex;
+  }
   #header-nav .CnD:hover .cd-hover ul {
     width: 100vw;
     height: 300px;
@@ -780,6 +851,7 @@ footer .footer-logo {
     text-align: left;
     color: white;
     margin-left: 16vw;
+    display: block;
   }
   #header-nav .CnD:hover .cd-hover span {
     display: inline;
@@ -823,15 +895,20 @@ footer .footer-logo {
     background-color: #235ea8;
     margin-top: 0;
   }
+  #header-nav .Support:hover .support-hover .nav-dropdown {
+    display: flex;
+  }
   #header-nav .Support:hover .support-hover ul {
     width: 100vw;
     height: 150px;
   }
   #header-nav .Support:hover .support-hover h2 {
+    display: block;
     margin-top: 30px;
     text-align: left;
     color: white;
     margin-left: 16vw;
+    display: block;
   }
   #header-nav .Support:hover .support-hover span {
     display: inline;
@@ -875,6 +952,9 @@ footer .footer-logo {
     background-color: #218e4f;
     margin-top: 0;
   }
+  #header-nav .DM:hover .dm-hover .nav-dropdown {
+    display: flex;
+  }
   #header-nav .DM:hover .dm-hover ul {
     width: 100vw;
     height: 150px;
@@ -884,6 +964,7 @@ footer .footer-logo {
     text-align: left;
     color: white;
     margin-left: 16vw;
+    display: block;
   }
   #header-nav .DM:hover .dm-hover span {
     display: inline;
@@ -927,6 +1008,9 @@ footer .footer-logo {
     background-color: #ac2424;
     margin-top: 0;
   }
+  #header-nav .TS:hover .ts-hover .nav-dropdown {
+    display: flex;
+  }
   #header-nav .TS:hover .ts-hover ul {
     width: 100vw;
     height: 150px;
@@ -936,6 +1020,7 @@ footer .footer-logo {
     text-align: left;
     color: white;
     margin-left: 16vw;
+    display: block;
   }
   #header-nav .TS:hover .ts-hover span {
     display: inline;
@@ -979,6 +1064,9 @@ footer .footer-logo {
     background-color: #483e62;
     margin-top: 0;
   }
+  #header-nav .wd:hover .wd-hover .nav-dropdown {
+    display: flex;
+  }
   #header-nav .wd:hover .wd-hover ul {
     width: 100vw;
     height: 150px;
@@ -988,6 +1076,7 @@ footer .footer-logo {
     text-align: left;
     color: white;
     margin-left: 16vw;
+    display: block;
   }
   #header-nav .wd:hover .wd-hover span {
     display: inline;
@@ -1031,6 +1120,9 @@ footer .footer-logo {
     background-color: #c50838;
     margin-top: 0;
   }
+  #header-nav .CS:hover .cs-hover .nav-dropdown {
+    display: flex;
+  }
   #header-nav .CS:hover .cs-hover ul {
     width: 100vw;
     height: 150px;
@@ -1040,6 +1132,7 @@ footer .footer-logo {
     text-align: left;
     color: white;
     margin-left: 16vw;
+    display: block;
   }
   #header-nav .CS:hover .cs-hover span {
     display: inline;
@@ -1083,6 +1176,9 @@ footer .footer-logo {
     background-color: #8d2d19;
     margin-top: 0;
   }
+  #header-nav .DC:hover .dc-hover .nav-dropdown {
+    display: flex;
+  }
   #header-nav .DC:hover .dc-hover ul {
     width: 100vw;
     height: 150px;
@@ -1093,6 +1189,7 @@ footer .footer-logo {
     text-align: left;
     color: white;
     margin-left: 16vw;
+    display: block;
   }
   #header-nav .DC:hover .dc-hover span {
     display: inline;
@@ -1335,7 +1432,7 @@ footer .footer-logo {
     margin: 0;
   }
   .nav-dropdown {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: normal;
     align-content: space-between;

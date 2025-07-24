@@ -6,11 +6,59 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wdth,wght@0,75..100,500;1,75..100,500&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="styles.css">
     <title>Full Service Digital Agency</title>
 </head>
-<header>
-    <div class="header-top">
+
+<div id="overlay"></div>
+
+<div id="sidebar">
+    <h3>SERVICES</h3>
+    <p><span class="icon-double-right-arrow"></span>BESPOKE SOFTWARE</p>
+    <p><span class="icon-double-right-arrow"></span>IT SUPPORT</p>
+    <p><span class="icon-double-right-arrow"></span>DIGITAL MARKETING</p>
+    <p><span class="icon-double-right-arrow"></span>TELECOMS SERVICES</p>
+    <p><span class="icon-double-right-arrow"></span>WEB DESIGN</p>
+    <p><span class="icon-double-right-arrow"></span>CYBER SECURITY</p>
+    <h3>OUR WORK</h3>
+    <p><span class="icon-double-right-arrow"></span>CASE STUDIES</p>
+    <p><span class="icon-double-right-arrow"></span>OUR DIGITAL MARKETING CLIENTS</p>
+    <p><span class="icon-double-right-arrow"></span>OUR WEBSITE CLIENTS</p>
+    <p><span class="icon-double-right-arrow"></span>OUR IT CLIENTS</p>
+    <p><span class="icon-double-right-arrow"></span>OUR BESPOKE SOFTWARE CLIENTS</p>
+    <p><span class="icon-double-right-arrow"></span>OUR TELECOMS CLIENTS</p>
+    <h3>OUR KNOWLEDGE</h3>
+    <p><span class="icon-double-right-arrow"></span>TECHNOLOGIES</p>
+    <p><span class="icon-double-right-arrow"></span>INDUSTRIES</p>
+    <p><span class="icon-double-right-arrow"></span>NEWS</p>
+    <p><span class="icon-double-right-arrow"></span>INSIGHTS</p>
+    <h3>TRAINING</h3>
+    <p><span class="icon-double-right-arrow"></span>TRAIN FOR A CAREER IN TECH</p>
+    <p><span class="icon-double-right-arrow"></span>SKILLS BOOTCAMP</p>
+    <p><span class="icon-double-right-arrow"></span>SCS FREQUENTLY ASKED QUESTIONS</p>
+    <p><span class="icon-double-right-arrow"></span>SCION COLLABORATORS</p>
+    <h3>OUR COMPANY</h3>
+    <p><span class="icon-double-right-arrow"></span>WHY CHOOSE US?</p>
+    <p><span class="icon-double-right-arrow"></span>OUR CULTURE</p>
+    <p><span class="icon-double-right-arrow"></span>OUR TEAM</p>
+    <p><span class="icon-double-right-arrow"></span>OUR CAREERS</p>
+    <p><span class="icon-double-right-arrow"></span>OUR BENEFITS</p>
+    <p><span class="icon-double-right-arrow"></span>OUR ACCREDITATIONS</p>
+    <p><span class="icon-double-right-arrow"></span>LAPTOPS 4 LEARNING</p>
+    <h3>CONTACT US</h3>
+    <p><span class="icon-double-right-arrow"></span>CAMBRIDGE OFFICE</p>
+    <p><span class="icon-double-right-arrow"></span>WYMONDHAM OFFICE</p>
+    <p><span class="icon-double-right-arrow"></span>GREAT YARMOUTH OFFICE</p>
+
+</div>
+
+<div id="main-content">
+
+<div class="sticky-container">
+<header data-sticky-container>
+    <div class="header-top" data-sticky data-margin-top="0">
     <div class="netmatters-logo">
     <img class="netmatters-logo" src="img/netmatters-logo.webp" alt="Netmatters Logo">
     </div>
@@ -152,16 +200,55 @@
             </li>
         </ul>
     </nav>
-
 </header>
+</div>
 
-<body>
+<div>
+    <div class="home-carousel">
     <div class="home-image-container">
         <h1 class="home-image-header">The East of Englands Leading Technology Company</h1>
-        <p class="home-image-paragraph">Performance-driven digital and technology services with comoplete transparency</p>
+        <p class="home-image-paragraph">Performance-driven digital and technology services with complete transparency</p>
         <button class="find-out-more-button">Why Choose Us?</button>
-        <img id="home-image" src="img/home-image-1.webp" alt="A photograph of the Netmatters building">
+        <img class="home-image" src="img/home-image-1.webp" alt="A photograph of the Netmatters building">
     </div>
+    <div class="home-image-container">
+        <h1 class="home-image-header">Bespoke Software</h1>
+        <p class="home-image-paragraph">Delivering expert bespoke software solutions across a range of industries.</p>
+        <button class="find-out-more-button">Find out more</button>
+        <img class="home-image" src="img/home-image-2.webp" alt="A photograph of the Netmatters building">
+    </div>
+    <div class="home-image-container">
+        <h1 class="home-image-header">IT Support</h1>
+        <p class="home-image-paragraph">Fast and cost-effective IT support services for your business.</p>
+        <button class="find-out-more-button">Find out more</button>
+        <img class="home-image" src="img/home-image-3.webp" alt="A photograph of the Netmatters building">
+    </div>
+    <div class="home-image-container">
+        <h1 class="home-image-header">Digital Marketing</h1>
+        <p class="home-image-paragraph">Generating your new business through results-driven marketing activities.</p>
+        <button class="find-out-more-button">Find out more</button>
+        <img class="home-image" src="img/home-image-4.webp" alt="A photograph of the Netmatters building">
+    </div>
+    <div class="home-image-container">
+        <h1 class="home-image-header">Telecoms Services</h1>
+        <p class="home-image-paragraph">A new approach to connectivity, see how we can help your business.</p>
+        <button class="find-out-more-button">Find out more</button>
+        <img class="home-image" src="img/home-image-5.webp" alt="A photograph of the Netmatters building">
+    </div>
+    <div class="home-image-container">
+        <h1 class="home-image-header">Web Design</h1>
+        <p class="home-image-paragraph">For businesses looking to make a strong and effective first impression.</p>
+        <button class="find-out-more-button">Find out more</button>
+        <img class="home-image" src="img/home-image-6.webp" alt="A photograph of the Netmatters building">
+    </div>
+    <div class="home-image-container">
+        <h1 class="home-image-header">Cyber Security</h1>
+        <p class="home-image-paragraph">Keeping businesses and their customers sensitive information protected.</p>
+        <button class="find-out-more-button">Find out more</button>
+        <img class="home-image" src="img/home-image-7.webp" alt="A photograph of the Netmatters building">
+    </div>
+    </div>
+
 
     <h2>Our Services</h2>
     <a href="#">View Our Work</a>
@@ -344,6 +431,33 @@
             <p>&copy; Copyright Netmatters 2025. All rights reserved. - <a>Sitemap</a></p>
             </div>
         </footer>
+        
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/slick/slick.min.js"></script>
+        <script src="js/carousel.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-js/1.3.0/sticky.min.js" integrity="sha512-3z3zGiu0PabNyuTAAfznBJFpOg4owG9oQQasE5BwiiH5BBwrAjbfgIe0RCdtHJ0BQV1YF2Shgokbz2NziLnkuQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            let lastScrollTop = 0;
+            const header = document.querySelector('header');
 
+            window.addEventListener('scroll', function () {
+                let scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+                if (scrollTop > lastScrollTop) {
+                // Scrolling down
+                header.classList.add('header-hidden');
+                } else {
+                // Scrolling up
+                header.classList.remove('header-hidden');
+                }
+
+                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Avoid negative values
+            });
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/sidebar.js"></script>
+</div>
 </body>
 </html>
