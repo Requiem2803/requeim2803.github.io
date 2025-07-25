@@ -28,6 +28,37 @@ $text-color: #333645;
   z-index: 1000;
 }
 
+#cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 25%;
+  width: 60%;
+  height: 200px;
+  background-color: #222;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100000;
+  font-family: Arial, sans-serif;
+  text-wrap: wrap;
+}
+
+#cookie-banner p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+#cookie-banner button {
+  background-color: #00aaff;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
 #overlay {
     position: fixed;
     top: 0;
