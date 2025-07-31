@@ -3,7 +3,9 @@ $secondary-colour: #323842;
 $third-colour: #d9b918;
 
 * {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 html {
@@ -83,7 +85,7 @@ button {
 
 .submit {
     width: 150px;
-    height: 25px;
+    height: 28px;
     transition: .5s;
     font-size: 20px;
     background-color: green;

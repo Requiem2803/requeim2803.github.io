@@ -1,3 +1,7 @@
+* {
+    font-family: "Bitcount Grid Double", system-ui;
+}
+
 body {
     background-color: black;
 }
@@ -6,12 +10,14 @@ h1 {
     font-size: 64px;
     color: red;
     text-align: center;
+    text-shadow: 0 0 15px red;
 }
 
 h2 {
     font-size: 40px;
     color: red;
     text-align: center;
+    text-shadow: 0 0 15px red;
 }
 
 li {
@@ -25,6 +31,7 @@ li {
 
 p {
     font-size: 30px;
+    text-shadow: 0 0 15px red;
 }
 
 button {

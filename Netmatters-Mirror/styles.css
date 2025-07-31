@@ -633,14 +633,14 @@ header.header-hidden {
   background-color: #30cc71;
 }
 #trustpilot-button:hover {
-  background-color: #186538;
+  background-color: rgb(23.7142857143, 100.7857142857, 55.8273809524);
 }
 
 #google-button {
   background-color: steelblue;
 }
 #google-button:hover {
-  background-color: #224058;
+  background-color: rgb(34.3, 63.7, 88.2);
 }
 
 .banner {
@@ -867,7 +867,7 @@ footer .footer-logo {
     z-index: 10000;
     left: 0;
     height: 600px;
-    background-color: #435466;
+    background-color: rgb(66.712244898, 83.906122449, 101.787755102);
     margin-top: 0;
   }
   #header-nav .CnD:hover .cd-hover .nav-dropdown {
@@ -923,7 +923,7 @@ footer .footer-logo {
     z-index: 10000;
     left: 0;
     height: 300px;
-    background-color: #235ea8;
+    background-color: rgb(35.3913043478, 93.7869565217, 168.1086956522);
     margin-top: 0;
   }
   #header-nav .Support:hover .support-hover .nav-dropdown {
@@ -980,7 +980,7 @@ footer .footer-logo {
     z-index: 10000;
     left: 0;
     height: 300px;
-    background-color: #218e4f;
+    background-color: rgb(33.4285714286, 142.0714285714, 78.6964285714);
     margin-top: 0;
   }
   #header-nav .DM:hover .dm-hover .nav-dropdown {
@@ -1036,7 +1036,7 @@ footer .footer-logo {
     z-index: 10000;
     left: 0;
     height: 300px;
-    background-color: #ac2424;
+    background-color: rgb(171.6924778761, 35.8075221239, 35.8075221239);
     margin-top: 0;
   }
   #header-nav .TS:hover .ts-hover .nav-dropdown {
@@ -1092,7 +1092,7 @@ footer .footer-logo {
     z-index: 10000;
     left: 0;
     height: 300px;
-    background-color: #483e62;
+    background-color: rgb(72.3156779661, 61.5021186441, 97.9978813559);
     margin-top: 0;
   }
   #header-nav .wd:hover .wd-hover .nav-dropdown {
@@ -1148,7 +1148,7 @@ footer .footer-logo {
     z-index: 10000;
     left: 0;
     height: 300px;
-    background-color: #c50838;
+    background-color: rgb(197.3881578947, 8.1118421053, 55.8815789474);
     margin-top: 0;
   }
   #header-nav .CS:hover .cs-hover .nav-dropdown {
@@ -1204,7 +1204,7 @@ footer .footer-logo {
     z-index: 10000;
     left: 0;
     height: 300px;
-    background-color: #8d2d19;
+    background-color: rgb(141.1481481481, 44.537037037, 25.3518518519);
     margin-top: 0;
   }
   #header-nav .DC:hover .dc-hover .nav-dropdown {
