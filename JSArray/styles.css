@@ -15,7 +15,7 @@ header {
   background: #323842;
   border: #d9b918 solid 4px;
   width: 20vw;
-  min-width: 200px;
+  min-width: 250px;
   display: block;
   margin: 0 auto;
   border-radius: 20px;
@@ -97,14 +97,12 @@ h2 {
   border: #d9b918 3px solid;
   width: 20%;
   min-width: 250px;
-  height: 40px;
   margin: 20px auto;
   border-radius: 20px;
   box-shadow: inset 0 0 10px black;
   text-shadow: 2px 2px 5px black;
   display: block;
-  font-size: 32px;
-  text-wrap: nowrap;
+  font-size: 22px;
 }
 
 img {
@@ -150,7 +148,7 @@ h3 {
 }
 
 @media (min-width: 768px) {
-  h3 {
+  h3, h2 {
     font-size: 32px;
   }
 }/*# sourceMappingURL=styles.css.map */
