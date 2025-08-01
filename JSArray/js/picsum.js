@@ -30,10 +30,8 @@ $(".submit").on("click", (e) => {
 
         if (existingList.length > 0) {
             existingList.append(`<li><img src="${currentImageUrl}" alt="Assigned Image"></li>`);
-        newImage()
         } else {
             $("#assigned-images").append(`<ul data-email="${email}"><h3>${email}</h3><li><img src="${currentImageUrl}" alt="Assigned Image"></li></ul>`);
-        newImage()
         }
 
         
